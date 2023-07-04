@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image" href="img/logo.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="siwmato.css" />
+
+    <title>siwmato</title>
+</head>
+
+<body class="all bd">
+    <header class="header">
+        <a href="#home" class="navigation-title"><img src="img/logo.png" alt="siwmato" class="logo">siwmato</a>
+        <nav class="navigation">
+            <a href="#home" class="active">Home</a>
+            <a href="#hotel">Hotels</a>
+            <a href="#category">Category</a>
+            <a href="#about">About</a>
+            <a href="#contect">Contect</a>
+        </nav>
+        <div class="icon">
+            <i class="fa fa-bars" aria-hidden="true" id="manu" onclick="navigation()"></i>
+            <i class="fa fa-search" aria-hidden="true" id="search" onclick="ser()"></i>
+            <a href=""><i class="fa fa-heart" aria-hidden="true" id="heart"></i></a>
+            <a href=""> <i class="fa fa-shopping-cart" aria-hidden="true" id="cart"></i></a>
+            <i class="fa fa-user" aria-hidden="true" id="user" onclick="log()"></i>
+        </div>
+        <form class="from-search">
+            <i class="fa fa-search" aria-hidden="true" id="search-item"></i>
+            <input type="text" placeholder="search food" id="search-food">
+            <!-- <i class="fa fa-search" aria-hidden="true" id="search-item"></i> -->
+        </form>
+        <div class="login">
+            <p>Login</p>
+            <form class="login-form">
+                <input type="text" placeholder="Username" id="name"><br>
+                <input type="password" placeholder="Password" id="pass">
+                <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="hide()"></i><br>
+                <input type="button" value="Login" class="button">
+            </form>
+
+        </div>
+    </header>
+    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="ads" id="home">
+        <div class="swiper mySwiper container head">
+            <div class="swiper-wrapper wrapper">
+                <div class="slide swiper-slide odd">
+                    <div class="content">
+                        <span>Today spical</span>
+                        <h3>chicken biryani</h3>
+                        <p>Biryani communicates a sense of home that reminds people of belonging. Furthermore, it traces
+                            them back to their old memories of home, family, and loved ones. So, in essence, Biryani is
+                            not just any other dish, it is a desi dish. A desi food that holds the memory of home</p>
+                        <a href="" class="order">Order now! </a>
+                    </div>
+                    <div class="image">
+                        <img src="img/ad1.png" alt="">
+                    </div>
+                </div>
+                <div class="slide swiper-slide even">
+                    <div class="content">
+                        <span>Combo Offer</span>
+                        <h3>KFC</h3>
+                        <p>All the lovers of KFC if you are in Siliguri must visit this kfc restaurant.. ambiance is
+                            very good and they have sufficient sitting capacity..
+                            Most importantly crowd is also very good.
+                            and they have also maintained the service quality and taste of kfc..</p>
+                        <a href="" class="order">Order now! </a>
+                    </div>
+                    <div class="image">
+                        <img src="img/ad2.png" alt="">
+                    </div>
+                </div>
+                <div class="slide swiper-slide odd">
+                    <div class="content">
+                        <span>Spical offer</span>
+                        <h3>tandoori</h3>
+                        <p>In addition to the colors provided by the spices, tandoori marinades are also flavored
+                            traditionally with ginger, garlic, coriander powder, cayenne pepper, and garam masala. Garam
+                            masala is a combination of roasted and ground cardamom, cumin, cinnamon, cloves, nutmeg and
+                            black pepper</p>
+                        <a href="" class="order">Order now! </a>
+                    </div>
+                    <div class="image">
+                        <img src="img/ad3.png" alt="">
+                    </div>
+                </div>
+                <div class="slide swiper-slide even">
+                    <div class="content">
+                        <span>Chinese spical</span>
+                        <h3>Hokkien noodles</h3>
+                        <p>Hokkien noodles originate from Fujian (Hokkien) province in China, but are also quite common
+                            in both Malaysia and Singapore. Hokkien noodles are a kind of fresh egg noodle. They're
+                            basically what we know here in the U.S. as a lo mein noodle.</p>
+                        <a href="" class="order">Order now! </a>
+                    </div>
+                    <div class="image">
+                        <img src="img/ad4.png" alt="">
+                    </div>
+                </div>
+                <div class="slide swiper-slide odd">
+                    <div class="content">
+                        <span>veg spical</span>
+                        <h3>Dosai</h3>
+                        <p>A dosa, also called dosai, dosey, or dosha, is a thin pancake in South Indian cuisine made
+                            from a fermented batter of ground black lentils and rice. Dosas are popular in South Asia as
+                            well as around the world. Dosas are served hot, often with chutney and sambar</p>
+                        <a href="" class="order">Order now! </a>
+                    </div>
+                    <div class="image">
+                        <img src="img/ad5.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="hotal" id="hotel">
+        <h3 class="heading">Hotel</h3>
+        <h1 class="sub-heading">Popular Hotel</h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fa fa-heart heart hea" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
+                <i class="fa fa-arrow-left left-arrow" aria-hidden="true" onclick="left()" class="left-arrow"></i>
+
+                <img src="img/1.jpg" alt="" id="dish">
+                <i class="fa fa-arrow-right right-arrow" aria-hidden="true" onclick="right()" class="right-arrow"></i>
+                <li>Vellore kichen</li>
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa fa-heart heart hea" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
+                <i class="fa fa-arrow-left left-arrow" aria-hidden="true" onclick="left1()" class="left-arrow"></i>
+
+                <img src="img/6.jpg" alt="" id="dish1">
+                <i class="fa fa-arrow-right right-arrow" aria-hidden="true" onclick="right1()" class="right-arrow"></i>
+                <p>SS Hyderabad Biryani</p>
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa fa-heart heart hea" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
+                <i class="fa fa-arrow-left left-arrow" aria-hidden="true" onclick="left2()" class="left-arrow"></i>
+
+                <img src="img/14.jpg" alt="" id="dish2">
+                <i class="fa fa-arrow-right right-arrow" aria-hidden="true" onclick="right2()" class="right-arrow"></i>
+                <p>Hotel Saravana Bhavan</p>
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa fa-heart heart hea" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
+                <i class="fa fa-arrow-left left-arrow" aria-hidden="true" onclick="left3()" class="left-arrow"></i>
+
+                <img src="img/15.jpg" alt="" id="dish3">
+                <i class="fa fa-arrow-right right-arrow" aria-hidden="true" onclick="right3()" class="right-arrow"></i>
+                <p>Dindigul Thalappakatti</p>
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa fa-heart heart hea" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
+                <i class="fa fa-arrow-left left-arrow" aria-hidden="true" onclick="left4()" class="left-arrow"></i>
+
+                <img src="img/19.jpg" alt="" id="dish4">
+                <i class="fa fa-arrow-right right-arrow" aria-hidden="true" onclick="right4()" class="right-arrow"></i>
+                <p>KFC</p>
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa fa-heart heart hea" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
+                <i class="fa fa-arrow-left left-arrow" aria-hidden="true" onclick="left5()" class="left-arrow"></i>
+
+                <img src="img/23.jpg" alt="" id="dish5">
+                <i class="fa fa-arrow-right right-arrow" aria-hidden="true" onclick="right5()" class="right-arrow"></i>
+                <p>The Red Box</p>
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa fa-heart heart hea" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
+                <i class="fa fa-arrow-left left-arrow" aria-hidden="true" onclick="left6()" class="left-arrow"></i>
+
+                <img src="img/10.jpg" alt="" id="dish6">
+                <i class="fa fa-arrow-right right-arrow" aria-hidden="true" onclick="right6()" class="right-arrow"></i>
+                <p>Liza Restaurant</p>
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa fa-heart heart hea" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-eye eye" aria-hidden="true"></i></a>
+                <i class="fa fa-arrow-left left-arrow" aria-hidden="true" onclick="left7()" class="left-arrow"></i>
+
+                <img src="img/31.jpg" alt="" id="dish7">
+                <i class="fa fa-arrow-right right-arrow" aria-hidden="true" onclick="right7()" class="right-arrow"></i>
+                <p>Fusilli Reasons</p>
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="ac">
+        <div class="category" id="category">
+            <h3 class="heading">Category</h3>
+            <div class="filter">
+                <h3 class="filter-h3" onclick="filter1()">Filter</h3>
+            </div>
+            <div class="filter-div">
+                <h3 class="filter-div-h3" onclick="v()">Veg</h3>
+                <h3 class="filter-div-h3" onclick="nv()">Non-Veg</h3>
+                <h3 class="filter-div-h3 " onclick="b()">Both</h3>
+            </div>
+
+            <div class="veg" id="veg">
+                <h1 class="sub-heading"> Popular Vegetarian Dish</h1>
+                <div class="swiper mySwiper veg-food">
+                    <div class="swiper-wrapper">
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food1.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food2.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food3.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food4.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food5.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food6.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food7.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food8.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food9.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food10.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food11.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food12.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food13.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food14.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food15.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food16.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food17.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food18.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food19.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food20.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/food21.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="non-veg" id="non-veg">
+                <h1 class="sub-heading">Popular Non-vegetarian Dish</h1>
+                <div class="swiper mySwiper veg-food">
+                    <div class="swiper-wrapper">
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood1.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood2.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood3.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood4.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood5.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood6.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood7.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood8.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood9.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood10.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood11.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood12.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood13.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood14.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood15.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood16.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood17.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood18.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood19.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood20.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="slider swiper-slide">
+                            <div class="vfo">
+                                <img src="img/nfood21.jpg" alt="" class="food ">
+                                <div class="Button">
+                                    <button class="btn">Order Now</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="about">
+        <div class="about-div">
+            <img src="img/18.jpg" alt="" id="about-img">
+            <div class="div-pra">
+                <p id="about-par"><img src="img/logo.png" alt="siwmato" class="si"><span class="pa"> siwmato is an
+                        Indian multinational restaurant aggregator and food delivery companyfounded
+                        by Deepinder Goyal and Pankaj Chaddah in 2008.[4][5] siwmato provides information, menus and
+                        user-reviews of restaurants as well as food delivery options from partner restaurants in select
+                        cities.[6] As of 2019, the service is available in 24 countries and in more than 10,000
+                        cities</span></p>
+                <div class="div-icon">
+                    <i class="fa fa-google ic" aria-hidden="true"></i>
+                    <i class="fa fa-youtube ic" aria-hidden="true"></i>
+                    <i class="fa fa-pinterest ic" aria-hidden="true"></i>
+                </div>
+                <div class="ps">
+                    <div class="as">
+                        <i class="fa fa-android" aria-hidden="true"></i>
+                        <span>Play Store</span>
+
+                    </div>
+                    <div class="as">
+                        <i class="fa fa-apple" aria-hidden="true"></i>
+                        <span>Apple Store</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contect">
+        <div class="follow">
+            <div>
+                <h1>Follow as</h1>
+                <div class="icon-fo">
+                    <i class="fa fa-whatsapp fl wh" aria-hidden="true"></i>
+                    <i class="fa fa-twitter fl tw" aria-hidden="true"></i>
+                    <i class="fa fa-facebook fl fb" aria-hidden="true"></i>
+                    <a href="https://instagram.com/siwmato_offical?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa fa-instagram fl in" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div>
+                <h1>Easy to contect</h1>
+                <div class="cn">
+                    <a href="tel:+919342199741"><i class="fa fa-phone" aria-hidden="true"></i>call :93421 99741 </a>
+                    <p><i class="fa fa-envelope"></i>Email</p>
+                </div>
+                
+            </div>
+        </div>
+        <input type="button" value="normal font" id="x" onclick="change()">
+    </section>
+
+
+
+
+
+
+    <!-- 
+    <div>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        fa-
+    </div> -->
+
+
+    <!-- 
+            <a href="tel:+919342199741">call</a> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="siwmato.js"></script>
+</body>
+
+</html>
