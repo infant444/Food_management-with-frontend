@@ -358,8 +358,10 @@ function b()
 
 
 
-
-
+function suc()
+{
+    alert("Order Successfully");
+}
 
 
 
